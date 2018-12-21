@@ -1,0 +1,3 @@
+development:
+  app_id: "YOUTUBE_APP_ID"
+  app_secret: "YOUTUBE_APP_SECRET"
