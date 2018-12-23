@@ -1,0 +1,5 @@
+<ul>
+  <% @playlists.each do |playlist| %>
+    <li><%= playlist.title %> (<%= playlist.item_count %> videos)</li>
+  <% end %>
+</ul>

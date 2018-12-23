@@ -1,0 +1,11 @@
+<h1>Playlists</h1>
+
+<div id="playlists">
+  <%= image_tag 'ajax-loader.gif' %>
+</div>
+
+<script>
+  $(function() {
+    $('#playlists').load('/playlists.js');
+  });
+</script>
