@@ -1,11 +1,12 @@
 <h1>Playlists</h1>
+<%= link_to 'update', fetch_playlists_path, method: :post %>
 
-<div id="playlists">
-  <%= image_tag 'ajax-loader.gif' %>
-</div>
-
-<script>
-  $(function() {
-    $('#playlists').load('/playlists.js');
-  });
-</script>
+<ul>
+  <% @playlists.each do |playlist| %>
+    <li>
+      <%= image_tag playlist.thumbnail_url %>
+      <%= playlist.title %>
+      <%= playlist.description %>
+    </li>
+  <% end %>
+</ul>
